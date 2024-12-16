@@ -5,7 +5,7 @@ import './navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
 import { ShopContext } from '../../contest/ShopContext';
-import dropdown_icon from '../Assets/dropdown_icon.png'
+
 const Navbar = () => {
   const [menu, setMenu] = useState("shop");
   const navigate = useNavigate(); // Initialize useNavigate
@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     
     <div className="navbar">
-  <img className="nav-dropdown" onClick={dropDown_toggle} src={dropdown_icon} alt="Menu Icon" />
+ <i className="fas fa-bars nav-dropdown" onClick={dropDown_toggle}></i>
   <div className="nav-logo">
     <img src={logo} alt="Logo" />
     <p>NK & SONS</p>
