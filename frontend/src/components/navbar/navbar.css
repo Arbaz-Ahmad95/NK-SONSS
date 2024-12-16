@@ -14,9 +14,9 @@
 }
 
 .nav-dropdown {
-    display: none;
+    display: none !important;
     cursor: pointer;
-    width: 30px;
+    font-size: 36px;
     transition: 0.5s;
 }
 
