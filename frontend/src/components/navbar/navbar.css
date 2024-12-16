@@ -181,7 +181,7 @@
     }
 
     .nav-dropdown {
-        display: block; /* Ensure dropdown is visible */
+        display: block  !important; /* Ensure dropdown is visible */
         width: 25px; /* Adjust size for smaller screens */
         margin-right: 10px;
     }
