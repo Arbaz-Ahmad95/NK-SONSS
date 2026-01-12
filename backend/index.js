@@ -12,7 +12,13 @@ const { body, validationResult } = require("express-validator");
 
 // Middleware setup
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: [
+    "https://nk-sons.vercel.app"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
 
 // Database connection with MongoDB
 const MONGO_URL = process.env.MONGO_URL;
